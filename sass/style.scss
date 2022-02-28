@@ -14,7 +14,6 @@ $post-title-font: "Cormorant Garamond", serif;
 }
 
 body {
-  min-height: 100vh;
   font-family: $regular-font;
   text-align: center;
 }
@@ -28,7 +27,7 @@ section {
 }
 
 .title {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 700;
   padding-bottom: 10px;
 }
@@ -43,7 +42,7 @@ section {
     // background-color: #f00;
     width: 80px;
     height: 80px;
-    line-height: 80px;
+    line-height: 73px;
     border: 5px solid #d3d609;
     color: #d3d609;
     border-radius: 50%;
@@ -179,9 +178,42 @@ section {
 .portfolio {
   background-color: #ddd;
   padding: 90px 0;
+  margin-bottom: 0;
 }
 .wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+/* Footer */
+
+.footer {
+  padding: 50px 0;
+  margin-bottom: 0;
+  .container {
+    position: relative;
+    .copy {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    .social {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      i {
+        margin-right: 10px;
+        font-size: 20px;
+        background-color: #000;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+      }
+    }
+  }
 }
