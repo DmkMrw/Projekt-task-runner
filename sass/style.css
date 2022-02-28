@@ -63,6 +63,14 @@ section {
   margin-bottom: 40px;
 }
 
+.tile:hover {
+  cursor: pointer;
+}
+
+.tile:hover img {
+  opacity: 0.5;
+}
+
 .tile img {
   width: 100%;
   height: 300px;
@@ -241,5 +249,118 @@ section {
   height: 40px;
   line-height: 40px;
   border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .container .social i:hover {
+  cursor: pointer;
+  background-color: #f00;
+}
+
+@media (max-width: 650px) {
+  .nav {
+    display: none;
+  }
+  .splash .splash-inner .main-post-title h3 {
+    font-size: 30px;
+  }
+  .splash .splash-inner .main-title h1 {
+    font-size: 40px;
+  }
+  .splash .splash-inner .navi {
+    width: 150px;
+    height: 35px;
+    font-size: 13px;
+    word-spacing: 2px;
+  }
+  .services-example {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services-example .commerce {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper .tile {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .copy {
+    display: none;
+  }
+  .footer .container .social i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1024px) {
+  .services-example {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services-example .commerce {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .wrapper .tile {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .footer p {
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .services-example {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .services-example .commerce {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .wrapper .tile {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .footer p {
+    padding-left: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
