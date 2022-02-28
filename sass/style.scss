@@ -4,3 +4,102 @@ $post-title-font: "Cormorant Garamond", serif;
 // font-family: "Cormorant Garamond", serif;
 // font-family: "Dancing Script", cursive;
 // font-family: "Roboto", sans-serif;
+
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: $regular-font;
+}
+/* Splash */
+
+.splash {
+  background-image: url("../images/bgc.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  position: relative;
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+
+    .logo {
+      font-family: $golden-font;
+      font-size: 30px;
+      color: #d3d609;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding-left: 20px;
+    }
+
+    .nav {
+      .ul-nav {
+        display: flex;
+
+        li {
+          list-style: none;
+          margin: 0 20px;
+          font-size: 18px;
+          color: #fff;
+          transition: 0.3s;
+          &:hover {
+            cursor: pointer;
+            color: #d3d609;
+          }
+        }
+      }
+    }
+  }
+  .splash-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    .post-title {
+      h3 {
+        font-family: $post-title-font;
+        font-size: 40px;
+        color: #fff;
+        padding: 20px 0;
+      }
+    }
+    .title {
+      h1 {
+        font-size: 50px;
+        color: #fff;
+        word-spacing: 3px;
+        padding-bottom: 30px;
+      }
+    }
+    .navi {
+      width: 200px;
+      height: 50px;
+      border: none;
+      background-color: #d3d609;
+      font-family: $regular-font;
+      font-size: 17px;
+      color: #fff;
+      font-weight: bold;
+      word-spacing: 3px;
+      transition: 0.3s;
+      &:hover {
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+      }
+    }
+  }
+}
